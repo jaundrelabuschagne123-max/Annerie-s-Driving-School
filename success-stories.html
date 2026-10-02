@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Success Stories | Annerie's Driving School</title>
+  <meta name="description" content="Over 2,800 learners licensed since 2011, with a 92% first-time pass rate. Read what our learners say.">
+  <meta name="theme-color" content="#D0112B">
+  <meta property="og:title" content="Success Stories | Annerie's Driving School">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.className += " js";</script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="stories">
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <!-- The odometer rolls up to the total number of learners when it scrolls into view -->
+    <section class="page-hero">
+      <div class="wrap">
+        <h1 data-bind="stories.title">Learners we have put on the road</h1>
+        <div class="odo-wrap">
+          <div class="odo" data-render="odometer"></div>
+          <p class="odo-caption">learners licensed <span data-bind="stories.since"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="stats" data-render="stats"></div>
+      </div>
+    </section>
+
+    <!-- Pass rate by year -->
+    <section class="section section--blush">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2">More learners pass every year</h2>
+          <p class="lede">The percentage of our learners who passed their driving test on the first attempt.</p>
+        </div>
+        <div class="bars" data-render="bars"></div>
+      </div>
+    </section>
+
+    <!-- Recent passes -->
+    <div class="ticker" data-render="ticker" role="region" aria-label="Recent passes"></div>
+
+    <!-- Testimonials with filter -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2">In their own words</h2>
+          <p class="lede">Filter by the kind of lessons you are thinking about.</p>
+        </div>
+        <div data-render="testimonials"></div>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <div class="wrap">
+        <div>
+          <h2>Be our next success story.</h2>
+          <p>Book your first lesson and we will take it from there.</p>
+        </div>
+        <a class="btn btn--white" href="contact.html">Book a lesson</a>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

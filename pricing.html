@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing | Annerie's Driving School</title>
+  <meta name="description" content="Clear driving lesson prices in rand. Pay per lesson or save with a package. Use our calculator to work out your lessons.">
+  <meta name="theme-color" content="#D0112B">
+  <meta property="og:title" content="Pricing | Annerie's Driving School">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.className += " js";</script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="pricing">
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="wrap">
+        <h1 data-bind="pricing.title">Prices you can plan around</h1>
+        <p class="lede" data-bind="pricing.lead"></p>
+      </div>
+    </section>
+
+    <!-- Calculator -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2">How much will it cost?</h2>
+          <p class="lede">Choose a gearbox and slide to the number of lessons. The more you book, the more you save.</p>
+        </div>
+        <div class="calc" data-render="calculator" data-reveal></div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="section section--blush">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2">Lesson packages</h2>
+          <p class="lede">Packages cost less per lesson and include extras you would otherwise pay for separately.</p>
+        </div>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Lesson packages compared">
+          <div data-render="packages"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rates and extras -->
+    <section class="section">
+      <div class="wrap two-col">
+        <div>
+          <h2 class="h3">Pay as you go</h2>
+          <ul class="rates" data-render="rates"></ul>
+          <ul class="notes" data-render="pricenotes"></ul>
+        </div>
+        <div>
+          <h2 class="h3">Extras</h2>
+          <ul class="rates" data-render="extras"></ul>
+          <h2 class="h3" style="margin-top:2.5rem">How to pay</h2>
+          <ul class="pay-list" data-render="payments"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--blush">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2">Pricing questions</h2>
+        </div>
+        <div class="faqs" data-render="faq" data-cat="pricing"></div>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <div class="wrap">
+        <div>
+          <h2>Not sure which option fits?</h2>
+          <p>Tell us where you are and we will recommend a starting point. No pressure.</p>
+        </div>
+        <a class="btn btn--white" href="contact.html">Ask us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
